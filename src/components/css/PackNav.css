@@ -1,0 +1,47 @@
+.PackNav {
+    position: absolute;
+    top: 258px;
+    right: 50px;
+
+    width: 250px;
+    height: max-content;
+    text-align: center;
+
+    display: block;
+    font-family: 'Montserrat';
+
+    z-index: 4;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.PackItem {
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    color: #18191F;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.PackItem:hover {
+    color: #E28F1D;
+}
+
+#current {
+    color: #286086;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#current:hover {
+    color: #286086;
+}
