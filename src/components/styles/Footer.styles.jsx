@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { device } from "../config"; 
 
 export const Socials = styled.div`
 display: flex;
 width: 256px;
 height: 32px;
 justify-content: space-between;
-margin: 0 0 12px 85px;
+margin: 0 0 12px 50px;
 &:hover {
   color: #E28F1D;
 }
@@ -29,30 +30,31 @@ transition: all 0.5s ease;
 export const FooterWrapper = styled.div`
 background-color: #0B0D17;
 // background-color: teal;
-height: 420px;
+min-height: 420px;
 margin-top: 135px;
-
+width: 100vw;
+height: 100%;
 `;
 export const FooterContainer = styled.div`
 display: flex;
-lex-direction: column;
+flex-direction: column;
 `;
 export const FooterRow = styled.div`
 display: flex;
-grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-grid-gap: 20px;
+flex-wrap: wrap;
+justify-content: space-around;
 `;
 
 export const FooterColumn = styled.div`
 display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
-
+  max-width: 320px;
 `;
 export const FooterHeadings = styled.p`
 height: 28px;
 width: 255px;
-margin: 64px 0 24px 85px;
+margin: 64px 0 24px 50px;
 font-family: 'Sora', sans-serif;
 font-size: 18px;
 font-weight: 600;
@@ -61,13 +63,12 @@ letter-spacing: 0em;
 text-align: left;
 color: #F4F5F7;
 cursor: pointer;
-
 `;
 
 export const Link = styled.a`
 color: #fff;
 text-decoration: none;
-margin: 0 0 12px 85px;
+margin: 0 0 12px 50px;
 font-family: 'Sora', sans-serif;
 font-size: 14px;
 font-weight: 400;
@@ -89,7 +90,7 @@ border: 0.5px solid #FFFFFF;
 opacity: 0.1;
 `;
 export const LastSection = styled.div`
-margin: 64px 47px 0 71px;
+margin: 40px 47px 0 71px;
 justify-content: space-between;
 display: flex;
 font-family: Sora;
@@ -99,9 +100,19 @@ line-height: 24px;
 letter-spacing: 0em;
 text-align: left;
 color: #FFFFFF;
+flex-direction: column;
+align-items: center;
+${device.large} {
+  flex-direction: row;
+  align-items: start;
+}
 `;
 export const FooterEnd = styled.div`
 display: flex;
+margin: 10px;
+${device.large} {
+  margin-bottom: 5px;
+}
 `;
 export const LogoContainer = styled.div`
 display: flex;
