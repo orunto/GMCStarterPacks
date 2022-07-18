@@ -1,11 +1,8 @@
 import styled from "styled-components";
-import { device } from "../config"; 
+// import { device } from "../config"; 
 
 export const Container = styled.div`
 flex: 1;
-${device.large} {
-  display: none;
-}
 `;
 export const Wrapper = styled.div`
 display: flex;

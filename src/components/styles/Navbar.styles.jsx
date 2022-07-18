@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+// import { device } from "../config"; 
 
 export const Container = styled.div`
 margin: 0;
@@ -10,6 +10,9 @@ height: 88px;
 display: flex;
 justify-content: space-between;
 font-family: 'Montserrat', sans-serif;
+${device.large} {
+    display: none;
+  }
 `;
 export const LogoContainer = styled.div`
 display: flex;
@@ -58,6 +61,9 @@ color: #18191F;
 width: 22.24px;
 height: 20px;
 margin-left: 30px;
+${device.large} {
+    display: none;
+  }
 `;
 export const PersonIcon = styled.img`
 color: #18191F;
@@ -70,6 +76,9 @@ background-color: #0B0D17;
 height: 50%;
 display: flex;
 justify-content: center;
+${device.large} {
+    display: none;
+  }
 `;
 export const NavText = styled.div`
 color: #FFFFFF;
