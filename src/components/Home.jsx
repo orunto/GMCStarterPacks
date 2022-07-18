@@ -20,7 +20,7 @@ const Home = () => {
             <Navbar /> 
             <Routes>
                 <Route path='/' element={<TechBro />}/>
-                <Route path='/owanbe' element={<Owanbe />}/>
+                {/* <Route path='/owanbe' element={<Owanbe />}/> */}
                 <Route path='/gym' element={<Gym />}/>
                 <Route path='/workfromhome' element={<WorkFromHome />}/>
                 <Route path='/corporatecasual' element={<CorporateCasual />}/>
