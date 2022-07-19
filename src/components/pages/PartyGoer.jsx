@@ -15,7 +15,7 @@ import { Container,
   
 import partygoer from '../../assets/partygoer.png';
 import downarrow from '../../assets/downarrow.png';
-// import { Icon } from '../components/icons/icons';
+
 
 import {  PackNav, PackItem } from '../constants';
 

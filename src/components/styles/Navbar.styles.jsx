@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import { device } from "../config"; 
+import { device } from "../config"; 
 
 export const Container = styled.div`
 margin: 0;
@@ -22,6 +22,7 @@ color: #18191F;
 width: 209px;
 height: 21px;
 `;
+
 export const Arm = styled.img`
 margin: 47px 0 0 0;
 width: 25px;
@@ -70,12 +71,32 @@ background-color: #0B0D17;
 height: 50%;
 display: flex;
 justify-content: center;
+width: 100vw;
+${device.small} {
+    flex-direction: row;
+   
+    align-items: start;
+    // width: 375px;
+    height: 70px;
+
+
+  }
 `;
 export const NavText = styled.div`
 color: #FFFFFF;
 font-family: 'Sora', sans-serif;
 padding: 14px 0 13px 0;
 font-size: 18px;
+dth: 100vw;
+${device.small} {
+  font-size: 14px;
+  height: 36px;
+width: 315px;
+left: 30px;
+top: 187px;
+font-weight: 400;
+
+}
 `;
 export const NavTextIcon = styled.img`
 justify-content: end;
@@ -84,4 +105,11 @@ height: 14px;
 margin: 15px 50px 0 0;
 position: absolute;
 right: 0;
+
+${device.small} {
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-top: 25px;
+}
+
 `; 

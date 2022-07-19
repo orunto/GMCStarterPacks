@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import { device } from "../config"; 
+import { device } from "../config"; 
 
 export const Container = styled.div`
 flex: 1;
@@ -26,6 +26,9 @@ margin: 0 0 0 100px;
 width: 652px;
 height: 240px;
 z-index: 2;
+${device.small} {
+  display: none;
+}
 `;
 
 export const OrderList = styled.div`

@@ -11,8 +11,6 @@ import { Container,
   Price } from '../styles/Components.styles';
   
 import owanbe from '../../assets/owanbe.png';
-// import downarrow from '../../assets/downarrow.png';
-// import { Icon } from '../components/icons/icons';
 
 import { PackNav, PackItem } from '../constants';
 
@@ -24,7 +22,7 @@ const Owanbe = () => {
           <PackItem id="techbro" href="/">Tech Bro</PackItem>
           <PackItem id="workfromhome" href="/workfromhome">Work from home</PackItem>
           <PackItem id="gym" href="/gym">Gym</PackItem>
-          <PackItem id="current" href="/owanbe">Owanbe</PackItem>
+          <PackItem id="current" href="/owanbe">Owambe</PackItem>
           <PackItem id="student" href="/student">Student</PackItem>
           <PackItem id="corporate" href="/corporatecasual">Corporate</PackItem>
           <PackItem id="partygoer" href="/partygoer">Party</PackItem>
@@ -33,7 +31,7 @@ const Owanbe = () => {
       </PackNav>
       <Wrapper>
         <Image src={owanbe} alt='image'/>
-        <Title>OWANBE STARTER 
+        <Title>OWAMBE STARTER 
 PACK</Title>
       </Wrapper>
       <OrderList>
