@@ -6,20 +6,23 @@ margin: 0;
 `;
 
 export const  Wrapper = styled.div`
-height: 88px;
+// height: 88px;
 display: flex;
 justify-content: space-between;
 font-family: 'Montserrat', sans-serif;
+width: 100vw;
+height: 100%;
 `;
 export const LogoContainer = styled.div`
 display: flex;
+width: 100%;
 `;
 export const LogoTitle = styled.div`
 margin: 45px 0 0 50px;
 font-size: 20px;
 line-height: 24px;
 color: #18191F;
-width: 209px;
+width: 13.06rem;
 height: 21px;
 `;
 
@@ -95,6 +98,7 @@ width: 315px;
 left: 30px;
 top: 187px;
 font-weight: 400;
+
 
 }
 `;

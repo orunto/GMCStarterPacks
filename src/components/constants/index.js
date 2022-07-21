@@ -1,4 +1,4 @@
-export { default as Navbar } from './Navbar';
+export { default as NavbarMobile } from './NavbarMobile';
 export { default as PackNav } from './PackNav';
 export { default as PackItem } from './PackItem';
 export { default as Carousel } from './Carousel';

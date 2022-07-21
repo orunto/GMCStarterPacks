@@ -13,8 +13,8 @@ export const Image = styled.img`
 position: absolute;
 margin-left: 32%;
 margin-top: 0px;
-height: 944px;
-width: 924px;
+min-height: 944px;
+max-width: 924px;
     
 `;
 

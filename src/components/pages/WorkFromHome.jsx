@@ -34,6 +34,7 @@ const WorkFromHome = () => {
           <PackItem id="rainingseason" href="/rainingseason">Raining</PackItem>
           <PackItem id="datenightspecial" href="/datenightspecial">Date Night</PackItem>
       </PackNav>
+      {/* <PackNavMobile></PackNavMobile> */}
         <Wrapper>
             <Image src={workfromhome} alt='image' />
             <Title>WORK FROM HOME 
