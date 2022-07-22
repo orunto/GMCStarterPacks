@@ -1,5 +1,5 @@
 export { default as Owanbe } from './Owanbe';
-export { default as TechBro } from './TechBro';
+export { default as TechBro} from './TechBro';
 export { default as WorkFromHome } from './WorkFromHome';
 export { default as CorporateCasual } from './CorporateCasual';
 export { default as PartyGoer } from './PartyGoer';

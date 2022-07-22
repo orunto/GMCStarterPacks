@@ -1,3 +1,4 @@
+
 .PackNav {
     position: absolute;
     top: 258px;
@@ -11,7 +12,23 @@
     font-family: 'Montserrat';
 
     z-index: 4;
+
+
 }
+.PackNavMobile{
+    position: absolute;
+    
+    width: 100%;
+    height: max-content;
+    text-align: center;
+
+    display: block;
+    font-family: 'Montserrat';
+
+    z-index: 4;
+    background-color: white;
+}
+
 
 span {
     font-size: 18px;
@@ -44,4 +61,16 @@ span {
 
 #current:hover {
     color: #286086;
+}
+
+@media screen and (max-width: 576px){
+    .PackNav {
+        display: none
+    }
+
+}
+
+@media screen and (min-width: 576px){
+    .PackNavMobile {
+    display: none}
 }

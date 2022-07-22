@@ -3,6 +3,10 @@ import { device } from "../config";
 
 export const Container = styled.div`
 flex: 1;
+
+${device.small} {
+  flex-direction: reverse;
+}
 `;
 export const Wrapper = styled.div`
 display: flex;
@@ -27,12 +31,21 @@ width: 652px;
 height: 240px;
 z-index: 2;
 ${device.small} {
-  display: none;
+  // display: none;
+  font-family: 'Rische';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+margin: 50px 0 22px 25px;
+color: #000000;
+width: 150px;
+height: auto;
+
 }
 `;
 
 export const OrderList = styled.div`
-// display: flex;
 margin: 0 0 0 100px;
 width: 380px;
 height: 568px;
@@ -40,6 +53,11 @@ overflow: auto;
 z-index: 2;
 &:first-child{
   margin-top: 0;
+}
+
+${device.small} {
+  width: auto;
+height: auto;
 }
 `;
 
@@ -60,12 +78,23 @@ width: 80px;
 border-radius: 20px 0 20px 0;
 font-size: 24px;
 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+
+${device.small} {
+  height: 25px;
+width: 40px;
+border-radius: 10px 0px;
+font-size: 14px;
+}
 `;
 
 export const ListItem = styled.div`
 margin-left: 24px;
 font-size: 24px;
 margin-top: 10px;
+
+${device.small} {
+  font-size: 14px;
+}
 `;
 
 export const ScrollText = styled.div`

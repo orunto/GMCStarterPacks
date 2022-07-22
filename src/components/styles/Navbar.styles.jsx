@@ -3,6 +3,12 @@ import { device } from "../config";
 
 export const Container = styled.div`
 margin: 0;
+@media screen and (max-width: 576px){
+  .desktop {
+      display: none
+  }
+
+}
 `;
 
 export const  Wrapper = styled.div`

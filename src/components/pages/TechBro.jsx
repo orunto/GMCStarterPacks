@@ -17,25 +17,16 @@ import techbro from '../../assets/techbro.png';
 import downarrow from '../../assets/downarrow.png';
 // import { Icon } from '../components/icons/icons';
 
-import {  PackNav, PackItem } from '../constants';
+import { PackNavList, PackNavListMobile } from '../constants';
 
 import '../css/Carousel.css';
 
 const TechBro = () => {
   return (  
     <Container>
-      <PackNav>
-        <span>Select a template</span>
-          <PackItem id="current" href="/">Tech Bro</PackItem>
-          <PackItem id="workfromhome" href="/workfromhome">Work from home</PackItem>
-          <PackItem id="gym" href="/gym">Gym</PackItem>
-          <PackItem id="owanbe" href="/owanbe">Owanbe</PackItem>
-          <PackItem id="student" href="/student">Student</PackItem>
-          <PackItem id="corporate" href="/corporate">Corporate</PackItem>
-          <PackItem id="partygoer" href="/partygoer">Party</PackItem>
-          <PackItem id="rainingseason" href="/rainingseason">Raining</PackItem>
-          <PackItem id="datenightspecial" href="/datenightspecial">Date Night</PackItem>
-      </PackNav>
+      <PackNavList type={"techbro"}/>
+      <PackNavListMobile type={"techbro"} />
+      
       <Wrapper>
         <Image src={techbro} alt='image'/>
         <Title>TECH BRO STARTER</Title>

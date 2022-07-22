@@ -17,26 +17,15 @@ import raining from '../../assets/raining.png';
 import downarrow from '../../assets/downarrow.png';
 // import { Icon } from '../components/icons/icons';
 
-import { PackNav, PackItem } from '../constants';
+import { PackNav, PackItem, PackNavList } from '../constants';
 
 const RainingSeason = () => {
   return (
     <Container>
-      <PackNav>
-        <span>Select a template</span>
-          <PackItem id="techbro" href="/">Tech Bro</PackItem>
-          <PackItem id="workfromhome" href="/workfromhome">Work from home</PackItem>
-          <PackItem id="gym" href="/gym">Gym</PackItem>
-          <PackItem id="owanbe" href="/owanbe">Owanbe</PackItem>
-          <PackItem id="student" href="/student">Student</PackItem>
-          <PackItem id="corporate" href="/corporatecasual">Corporate</PackItem>
-          <PackItem id="partygoer" href="/partygoer">Party</PackItem>
-          <PackItem id="current" href="/rainingseason">Raining</PackItem>
-          <PackItem id="datenightspecial" href="/datenightspecial">Date Night</PackItem>
-      </PackNav>
+      <PackNavList type={"raining"}/>
       <Wrapper>
         <Image src={raining} alt='image'/>
-        <Title>TECH BRO STARTER</Title>
+        <Title>RAINING SEASON PACK</Title>
       </Wrapper>
       <OrderList>
         <ListWrap>

@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Thanks to the index.js file I wrote earlier you can call all the components in a single line
-import { NavbarMobile, Footer, Carousel} from './constants'; 
+import { Navbar, NavbarMobile, Footer, Carousel} from './constants'; 
 import { CorporateCasual, DateNightSpecial, Gym, Owanbe, PartyGoer, RainingSeason, Student, TechBro, WorkFromHome } from './pages'; 
 
 import { TechBroItems } from './constants/TechBroItems';
@@ -17,9 +17,10 @@ import './css/PackNav.css';
 const Home = () => {
     return (
         <Router>
+            <Navbar />
             <NavbarMobile /> 
             <Routes>
-                <Route path='/' element={<TechBro />}/>
+                <Route path='/' element={<TechBro/>}/>
                 <Route path='/owanbe' element={<Owanbe />}/>
                 <Route path='/gym' element={<Gym />}/>
                 <Route path='/workfromhome' element={<WorkFromHome />}/>
