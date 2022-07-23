@@ -19,7 +19,12 @@ margin-left: 32%;
 margin-top: 0px;
 min-height: 944px;
 max-width: 924px;
-    
+${device.small} {
+  max-width: 375px;
+  min-height: 350.18px;
+  margin-left: 18%;
+  margin-top: 18px;
+}
 `;
 
 export const Title = styled.p`
@@ -57,7 +62,13 @@ z-index: 2;
 
 ${device.small} {
   width: auto;
-height: auto;
+height: 210px;
+overflow: auto;
+margin: 0 0 0 30px;
+z-index: 4;
+&:first-child{
+  margin-top: 0;
+}
 }
 `;
 
@@ -65,6 +76,9 @@ export const ListWrap = styled.div`
 display: flex;
 font-family: 'Sora', sans-serif;
 margin-top: 24px;
+${device.small} {
+margin-top: 10px;
+}
 `;
 
 export const Listing = styled.div`
@@ -94,13 +108,16 @@ margin-top: 10px;
 
 ${device.small} {
   font-size: 14px;
+  margin-left: 12px;
+  margin-top: 5px;
+
 }
 `;
 
 export const ScrollText = styled.div`
 font-family: 'Montserrat', sans-serif;
 position: absolute;
-width: 370px;
+width: 100%;
 height: 60px;
 left: 100px;
 top: 943px;
@@ -109,11 +126,22 @@ justify-content: center;
 font-size: 18px;
 display: flex;
 cursor: pointer;
+
+${device.small} {
+  position: static;
+  justify-content: normal;
+  height: 32px;
+  font-size: 12px;
+  margin: 10px 0 7px 0;
+}
 `;
 
 export const ScrollIcon = styled.img`
 flex: 1;
 margin: 5px 0 0 12px;
+${device.small} {
+  font-size: 12px;
+}
 `;
 
 export const PriceContainer = styled.div`

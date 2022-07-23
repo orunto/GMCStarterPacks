@@ -9,6 +9,7 @@
 
     display: flex;
     justify-content: space-between;
+    
 }
 
 .cornerslides {
@@ -51,3 +52,13 @@
 #rightcontrol {
     transform: rotate(180deg);
 }
+/* @media screen and (min-width: 576px){
+    .Carousel {
+    position: absolute;
+    width: 314.75px;
+    height: 75px;
+    left: 30px;
+    top: 647px;
+    
+}
+} */

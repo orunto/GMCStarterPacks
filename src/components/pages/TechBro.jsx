@@ -33,7 +33,7 @@ const TechBro = () => {
       </Wrapper>
       <OrderList>
         <ListWrap>
-          <Listing style={{marginTop:0}}>2</Listing>
+          <Listing style={{marginTop:"0"}}>2</Listing>
           <ListItem>Jean(s)</ListItem>
         </ListWrap>
         <ListWrap>
