@@ -12,27 +12,16 @@ import { Container,
   
 import owanbe from '../../assets/owanbe.png';
 
-import { PackNav, PackItem } from '../constants';
+import { PackNavList, PackNavListMobile } from '../constants';
 
 const Owanbe = () => {
   return (
     <Container>
-      <PackNav>
-        <span>Select a template</span>
-          <PackItem id="techbro" href="/">Tech Bro</PackItem>
-          <PackItem id="workfromhome" href="/workfromhome">Work from home</PackItem>
-          <PackItem id="gym" href="/gym">Gym</PackItem>
-          <PackItem id="current" href="/owanbe">Owambe</PackItem>
-          <PackItem id="student" href="/student">Student</PackItem>
-          <PackItem id="corporate" href="/corporatecasual">Corporate</PackItem>
-          <PackItem id="partygoer" href="/partygoer">Party</PackItem>
-          <PackItem id="rainingseason" href="/rainingseason">Raining</PackItem>
-          <PackItem id="datenightspecial" href="/datenightspecial">Date Night</PackItem>
-      </PackNav>
+      <PackNavList type={"owanbe"}/>
+      <PackNavListMobile type={"owanbe"} />
       <Wrapper>
-        <Image src={owanbe} alt='image'/>
-        <Title>OWAMBE STARTER 
-PACK</Title>
+        <Image style={{marginTop: "-80px"}} src={owanbe} alt='image'/>
+        <Title>OWAMBE STARTER</Title>
       </Wrapper>
       <OrderList>
         <ListWrap>

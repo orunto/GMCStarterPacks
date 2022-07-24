@@ -17,26 +17,19 @@ import student from '../../assets/student.png';
 import downarrow from '../../assets/downarrow.png';
 // import { Icon } from '../components/icons/icons';
 
-import { PackNav, PackItem } from '../constants';
+import { PackNavList, PackNavListMobile } from '../constants';
 
 
 const Student = () => {
   return (
     <Container>
-    <PackNav>
-        <span>Select a template</span>
-          <PackItem id="techbro" href="/">Tech Bro</PackItem>
-          <PackItem id="workfromhome" href="/workfromhome">Work from home</PackItem>
-          <PackItem id="gym" href="/gym">Gym</PackItem>
-          <PackItem id="owanbe" href="/owanbe">Owanbe</PackItem>
-          <PackItem id="current" href="/student">Student</PackItem>
-          <PackItem id="corporate" href="/corporatecasual">Corporate</PackItem>
-          <PackItem id="partygoer" href="/partygoer">Party</PackItem>
-          <PackItem id="rainingseason" href="/rainingseason">Raining</PackItem>
-          <PackItem id="datenightspecial" href="/datenightspecial">Date Night</PackItem>
-      </PackNav>
+      <PackNavList type={"student"}/>
+      <PackNavListMobile type={"student"} />
       <Wrapper>
-        <Image src={student} alt='image'/>
+        <Image sxm={{
+          "@media screen and (max-width: 576px)": {marginLeft: "31%"
+          }
+        }}src={student} alt='image'/>
         <Title>STUDENT 
 STARTER PACK</Title>
       </Wrapper>
@@ -73,7 +66,8 @@ STARTER PACK</Title>
           <Listing>1</Listing>
           <ListItem>Loafers</ListItem>
         </ListWrap>
-        <ScrollText>Scroll for more<span><ScrollIcon src={downarrow} alt='downarrow' /></span></ScrollText>
+            <ScrollText style={{width: "15%"}}>Scroll for more<span style={{width: "0%"}}>
+                <ScrollIcon src={downarrow} alt='downarrow' style={{marginTop: "26px"}}/></span></ScrollText>
       </OrderList>
       <PriceContainer>
         <Price>Order Pack for N170000</Price>

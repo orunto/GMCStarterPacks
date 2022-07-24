@@ -72,5 +72,6 @@ span {
 
 @media screen and (min-width: 576px){
     .PackNavMobile {
-    display: none}
+    display: none;
+}
 }

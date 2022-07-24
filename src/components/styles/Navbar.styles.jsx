@@ -12,12 +12,12 @@ margin: 0;
 `;
 
 export const  Wrapper = styled.div`
-// height: 88px;
+height: 88px;
 display: flex;
 justify-content: space-between;
 font-family: 'Montserrat', sans-serif;
 width: 100vw;
-height: 100%;
+// height: 100%;
 `;
 export const LogoContainer = styled.div`
 display: flex;
@@ -40,11 +40,11 @@ height: 18px;
 export const Center = styled.div`
 display: flex;
 align-items: center;
-margin-top: 22px;
 `;
 export const MenuItem = styled.div`
 color: #18191F;
 font-size: 18px;
+margin-top: 20px;
 `;
 export const Product = styled.div`
 display: flex;
@@ -52,7 +52,7 @@ display: flex;
 export const Arrow = styled.img`
 width: 10px;
 height: 5px;
-margin: 8px 0 0 7px;
+margin: 27px 0 0 7px;
 `;
 export const IconsContainer = styled.div`
 display: flex;

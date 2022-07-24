@@ -11,7 +11,6 @@ margin: 0 0 12px 50px;
   color: #E28F1D;
 }
 `;
-
 export const SocialLink = styled.a`
 background-color: rgba(255,255,255,0.2);
 color: #FFFFFF;
@@ -29,11 +28,13 @@ transition: all 0.5s ease;
 
 export const FooterWrapper = styled.div`
 background-color: #0B0D17;
-// background-color: teal;
 min-height: 420px;
-margin-top: 135px;
+margin-top: 30px;
 width: 100vw;
 height: 100%;
+${device.small} {
+  margin-top: 100px;
+}
 `;
 export const FooterContainer = styled.div`
 display: flex;
@@ -46,7 +47,7 @@ justify-content: space-around;
 `;
 
 export const FooterColumn = styled.div`
-display: flex;
+  display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
   max-width: 320px;

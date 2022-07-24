@@ -14,23 +14,13 @@ import gym from '../../assets/gym.png';
 // import downarrow from '../../assets/downarrow.png';
 // import { Icon } from '../components/icons/icons';
 
-import { PackNav, PackItem } from '../constants';
+import { PackNavList, PackNavListMobile} from '../constants';
 
 const Gym = () => {
   return (
     <Container>
-      <PackNav>
-        <span>Select a template</span>
-          <PackItem id="techbro" href="/">Tech Bro</PackItem>
-          <PackItem id="workfromhome" href="/workfromhome">Work from home</PackItem>
-          <PackItem id="current" href="/gym">Gym</PackItem>
-          <PackItem id="owanbe" href="/owanbe">Owanbe</PackItem>
-          <PackItem id="student" href="/student">Student</PackItem>
-          <PackItem id="corporate" href="/corporatecasual">Corporate</PackItem>
-          <PackItem id="partygoer" href="/partygoer">Party</PackItem>
-          <PackItem id="rainingseason" href="/rainingseason">Raining</PackItem>
-          <PackItem id="datenightspecial" href="/datenightspecial">Date Night</PackItem>
-      </PackNav>
+      <PackNavList type={"gym"}/>
+      <PackNavListMobile type={"gym"} />
       <Wrapper>
         <Image src={gym} alt='image'/>
         <Title>GYM STARTER</Title>

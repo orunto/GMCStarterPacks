@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { device } from "../config"; 
 
 export const Container = styled.div`
@@ -22,9 +22,11 @@ max-width: 924px;
 ${device.small} {
   max-width: 375px;
   min-height: 350.18px;
-  margin-left: 18%;
+  margin-left: 20%;
   margin-top: 18px;
+  z-index: 2;
 }
+${({sxm}) => sxm && css(sxm)}
 `;
 
 export const Title = styled.p`
@@ -34,7 +36,7 @@ font-size: 100px;
 margin: 0 0 0 100px;
 width: 652px;
 height: 240px;
-z-index: 2;
+z-index: 4;
 ${device.small} {
   // display: none;
   font-family: 'Rische';
@@ -110,6 +112,7 @@ ${device.small} {
   font-size: 14px;
   margin-left: 12px;
   margin-top: 5px;
+  z-index: 2;
 
 }
 `;
@@ -117,7 +120,7 @@ ${device.small} {
 export const ScrollText = styled.div`
 font-family: 'Montserrat', sans-serif;
 position: absolute;
-width: 100%;
+// width: 100%;
 height: 60px;
 left: 100px;
 top: 943px;
@@ -125,6 +128,7 @@ align-items:center;
 justify-content: center;
 font-size: 18px;
 display: flex;
+margin-top: 20px;
 cursor: pointer;
 
 ${device.small} {
@@ -148,10 +152,16 @@ export const PriceContainer = styled.div`
 background: #E28F1D;
 width: 289px;
 height: 58px;
-position: absolute;
+// position: absolute;
 margin-top: 56px;
 margin-left: 141px;
 border-radius: 35px;
+${device.small} {
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 77px;
+  margin-right: 78px;
+}
 `;
 
 export const Price = styled.div`
@@ -202,7 +212,7 @@ export const FooterWrapper = styled.div`
 background-color: #0B0D17;
 // background-color: teal;
 height: 420px;
-margin-top: 135px;
+margin-top: 30px;
 
 `;
 export const FooterContainer = styled.div`
@@ -293,6 +303,38 @@ export const WhiteArm = styled.img`
 width: 25px;
 height: 18px;
 color: #FFFFFF;
+`;
+export const PartyImage = styled.img`
+margin-top: -163px;
+position: absolute;
+margin-left: 32%;
+min-height: 944px;
+max-width: 924px;
+${device.small} {
+  max-width: 375px;
+  min-height: 350.18px;
+  margin-left: 20%;
+  margin-top: 18px;
+  z-index: 2;
+}
+${({sxm}) => sxm && css(sxm)}
+`;
+export const CorporateImage = styled.img`
+position: absolute;
+margin-left: 46%;
+margin-top: 0px;
+height: 950px;
+max-width: 924px;
+${device.small} {
+  max-width: 375px;
+  min-height: 350.18px;
+  margin-left: 50%;
+  margin-top: 18px;
+  z-index: 2;
+  height: 0px;
+}
+${({sxm}) => sxm && css(sxm)}
+
 `;
 
 

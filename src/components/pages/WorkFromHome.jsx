@@ -17,28 +17,16 @@ import { Container,
 import workfromhome from '../../assets/workfromhome .png';
 import downarrow from '../../assets/downarrow.png';
 
-import {  PackNav, PackItem } from '../constants';
+import {  PackNavList, PackNavListMobile } from '../constants';
 
 const WorkFromHome = () => {
     return (
     <Container>
-        <PackNav>
-        <span>Select a template</span>
-          <PackItem id="techbro" href="/">Tech Bro</PackItem>
-          <PackItem id="current" href="/workfromhome">Work from home</PackItem>
-          <PackItem id="gym" href="/gym">Gym</PackItem>
-          <PackItem id="owanbe" href="/owanbe">Owanbe</PackItem>
-          <PackItem id="student" href="/student">Student</PackItem>
-          <PackItem id="corporate" href="/corporatecasual">Corporate</PackItem>
-          <PackItem id="partygoer" href="/partygoer">Party</PackItem>
-          <PackItem id="rainingseason" href="/rainingseason">Raining</PackItem>
-          <PackItem id="datenightspecial" href="/datenightspecial">Date Night</PackItem>
-      </PackNav>
-      {/* <PackNavMobile></PackNavMobile> */}
+        <PackNavList type={"workfromhome"}/>
+        <PackNavListMobile type={"workfromhome"} />
         <Wrapper>
             <Image src={workfromhome} alt='image' />
-            <Title>WORK FROM HOME 
-STARTER</Title>
+            <Title>WORK FROM HOME</Title>
         </Wrapper>
         <OrderList>
             <ListWrap>
@@ -73,7 +61,8 @@ STARTER</Title>
                 <Listing>3</Listing>
                 <ListItem>Designer tees</ListItem>
             </ListWrap>
-            <ScrollText>Scroll for more<span><ScrollIcon src={downarrow} alt='downarrow' /></span></ScrollText>
+            <ScrollText style={{width: "15%"}}>Scroll for more<span style={{width: "0%"}}>
+                <ScrollIcon src={downarrow} alt='downarrow' style={{marginTop: "26px"}}/></span></ScrollText>
         </OrderList>
         <PriceContainer>
             <Price>Order Pack for N170000</Price>

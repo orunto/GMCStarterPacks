@@ -17,15 +17,20 @@ import raining from '../../assets/raining.png';
 import downarrow from '../../assets/downarrow.png';
 // import { Icon } from '../components/icons/icons';
 
-import { PackNav, PackItem, PackNavList } from '../constants';
+import { PackNavList, PackNavListMobile } from '../constants';
 
 const RainingSeason = () => {
   return (
     <Container>
-      <PackNavList type={"raining"}/>
+      <PackNavList type={"rainingseason"}/>
+      <PackNavListMobile type={"rainingseason"} />
       <Wrapper>
-        <Image src={raining} alt='image'/>
-        <Title>RAINING SEASON PACK</Title>
+        <Image sxm={{
+          "@media screen and (max-width: 576px)": {marginTop: "26px"
+          }
+        }}
+        src={raining} alt='image'/>
+        <Title>RAINING SEASON</Title>
       </Wrapper>
       <OrderList>
         <ListWrap>

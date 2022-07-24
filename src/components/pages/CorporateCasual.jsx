@@ -1,29 +1,34 @@
 import React from 'react';
 import { Container, 
   Wrapper,  
-  Image, 
+  CorporateImage, 
   Title, 
   OrderList, 
   ListWrap, 
   Listing, 
   ListItem,
-  ScrollText,
-  ScrollIcon, 
+  // ScrollText,
+  // ScrollIcon, 
   PriceContainer, 
   Price } from '../styles/Components.styles';
   
 import corporate from '../../assets/corporate.png';
-import downarrow from '../../assets/downarrow.png';
+// import downarrow from '../../assets/downarrow.png';
 // import { Icon } from '../components/icons/icons';
 
-import { PackNavList} from '../constants';
+import { PackNavList, PackNavListMobile} from '../constants';
 
 const CorporateCasual = () => {
   return (
     <Container>
-     <PackNavList type='corporate' />
+      <PackNavList type={"corporate"}/>
+      <PackNavListMobile type={"corporate"} />
       <Wrapper>
-        <Image src={corporate} alt='image'/>
+        <CorporateImage sxm={{
+          "@media screen and (max-width: 576px)": {marginTop: "2px", maxWidth: "280px"
+          }
+        }}
+       src={corporate} alt='image'/>
         <Title>CORPORATE
 CASUAL</Title>
       </Wrapper>
@@ -52,7 +57,7 @@ CASUAL</Title>
           <Listing>1</Listing>
           <ListItem>White sneakers</ListItem>
         </ListWrap>
-        <ScrollText>Scroll for more<span style={{width: "20px", marginTop: "18px"}}><ScrollIcon src={downarrow} alt='downarrow' /></span></ScrollText>
+        {/* <ScrollText>Scroll for more<span style={{width: "20px", marginTop: "18px"}}><ScrollIcon src={downarrow} alt='downarrow' /></span></ScrollText> */}
       </OrderList>
       <PriceContainer>
         <Price>Order Pack for N170000</Price>

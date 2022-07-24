@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Container, 
   Wrapper,  
-  Image, 
   Title, 
   OrderList, 
   ListWrap, 
@@ -11,33 +10,29 @@ import { Container,
   ScrollText,
   ScrollIcon, 
   PriceContainer, 
-  Price } from '../styles/Components.styles';
+  Price, 
+  PartyImage
+ } from '../styles/Components.styles';
   
 import partygoer from '../../assets/partygoer.png';
 import downarrow from '../../assets/downarrow.png';
 
 
-import {  PackNav, PackItem } from '../constants';
+import {  PackNavList, PackNavListMobile } from '../constants';
 
 const PartyGoer = () => {
   return (
     <Container>
-      <PackNav>
-        <span>Select a template</span>
-          <PackItem id="techbro" href="/">Tech Bro</PackItem>
-          <PackItem id="workfromhome" href="/workfromhome">Work from home</PackItem>
-          <PackItem id="gym" href="/gym">Gym</PackItem>
-          <PackItem id="owanbe" href="/owanbe">Owanbe</PackItem>
-          <PackItem id="student" href="/student">Student</PackItem>
-          <PackItem id="corporate" href="/corporatecasual">Corporate</PackItem>
-          <PackItem id="current" href="/partygoer">Party</PackItem>
-          <PackItem id="rainingseason" href="/rainingseason">Raining</PackItem>
-          <PackItem id="datenightspecial" href="/datenightspecial">Date Night</PackItem>
-      </PackNav>
+      <PackNavList type={"partygoer"}/>
+      <PackNavListMobile type={"partygoer"} />
       <Wrapper>
-        <Image src={partygoer} alt='image'/>
-        <Title>PARTY GOER
-STARTER</Title>
+        <PartyImage  sxm={{
+          "@media screen and (max-width: 576px)": {marginTop: "-52px", marginLeft: "32%"
+          }
+        }}
+
+        src={partygoer} alt='image'/>
+        <Title>PARTY GOER</Title>
       </Wrapper>
       <OrderList>
         <ListWrap>
