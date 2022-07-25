@@ -20,7 +20,7 @@ margin-top: 0px;
 min-height: 944px;
 max-width: 924px;
 ${device.small} {
-  max-width: 375px;
+  max-width: 287px;
   min-height: 350.18px;
   margin-left: 20%;
   margin-top: 18px;

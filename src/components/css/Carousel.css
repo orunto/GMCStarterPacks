@@ -57,13 +57,14 @@
         position: static; 
         top: 684px;
         right: 103px;
-        width: 413px;
+        width: 300px;
         height: 140px;
         z-index: 4;
         display: flex;
         justify-content: center;
-        margin-right: 30px;
-        margin-top: 50px;
+        /* margin-right: 30px; */
+        /* margin-top: 50px; */
+        margin: 50px auto 0;
     }
     .cornerslides {
         filter: none;

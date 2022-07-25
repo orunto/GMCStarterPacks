@@ -15,7 +15,6 @@ import { Container,
   
 import student from '../../assets/student.png';
 import downarrow from '../../assets/downarrow.png';
-// import { Icon } from '../components/icons/icons';
 
 import { PackNavList, PackNavListMobile } from '../constants';
 
@@ -31,7 +30,7 @@ const Student = () => {
           }
         }}src={student} alt='image'/>
         <Title>STUDENT 
-STARTER PACK</Title>
+TARTER PACK</Title>
       </Wrapper>
       <OrderList>
         <ListWrap>

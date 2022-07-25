@@ -10,14 +10,15 @@ import { Container,
   ListItem,
   ScrollText,
   ScrollIcon, 
-  PriceContainer, 
-  Price } from '../styles/Components.styles';
+  // PriceContainer
+   } from '../styles/Components.styles';
   
-import techbro from '../../assets/techbro.png';
+// import techbro from '../../assets/techbro.png';
 import downarrow from '../../assets/downarrow.png';
 // import { Icon } from '../components/icons/icons';
 
 import { PackNavList, PackNavListMobile } from '../constants';
+import  {OrderContainer} from '../constants';
 
 import '../css/Carousel.css';
 
@@ -28,7 +29,7 @@ const TechBro = () => {
       <PackNavListMobile type={"techbro"} />
       
       <Wrapper>
-        <Image src={techbro} alt='image'/>
+        <Image src="https://i.imgur.com/h0i2vBY.png" alt='image'/>
         <Title>TECH BRO STARTER</Title>
       </Wrapper>
       <OrderList>
@@ -66,9 +67,8 @@ const TechBro = () => {
         </ListWrap>
         <ScrollText>Scroll for more<span style={{width: "20px", marginTop: "18px"}}><ScrollIcon src={downarrow} alt='downarrow' /></span></ScrollText>
       </OrderList>
-      <PriceContainer>
-        <Price>Order Pack for N170000</Price>
-      </PriceContainer>
+      <OrderContainer />
+        
     </Container>
   )
   }
