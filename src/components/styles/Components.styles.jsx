@@ -159,7 +159,7 @@ border-radius: 35px;
 ${device.small} {
   position: absolute;
   margin-top: 180px;
-  margin-left: 77px;
+  margin-left: 68px;
   margin-right: 78px;
 }
 `;
