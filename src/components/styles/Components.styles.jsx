@@ -65,7 +65,7 @@ z-index: 2;
 ${device.small} {
   width: auto;
 height: 210px;
-overflow: auto;
+overflow: hidden;
 margin: 0 0 0 30px;
 z-index: 4;
 &:first-child{
@@ -159,7 +159,7 @@ cursor: pointer;
 ${device.small} {
   position: absolute;
   margin-top: 180px;
-  margin-left: 10%;
+  margin-left: 12%;
   // margin-right: 78px;
 }
 `;
