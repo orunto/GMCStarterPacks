@@ -12,7 +12,7 @@ const PackNavListMobile = ({ type }) => {
 };
   return (
     <PackNavMobile>
-      <span onClick={handleOnProduct} style={{display: "flex", alignItems: "center", marginLeft:"30px"}}>
+      <span onClick={handleOnProduct} style={{display: "flex", alignItems: "center", paddingLeft:"30px"}}>
         Select a template {onProduct || <PackItems/>}<Arrow src={arrowUp} alt="arrow" />
       </span>
       {onProduct && <PackItems>
