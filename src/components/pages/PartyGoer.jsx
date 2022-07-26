@@ -8,9 +8,7 @@ import { Container,
   Listing, 
   ListItem,
   ScrollText,
-  ScrollIcon, 
-  PriceContainer, 
-  Price, 
+  ScrollIcon,
   PartyImage
  } from '../styles/Components.styles';
   
@@ -18,7 +16,7 @@ import partygoer from '../../assets/partygoer.png';
 import downarrow from '../../assets/downarrow.png';
 
 
-import {  PackNavList, PackNavListMobile } from '../constants';
+import {  PackNavList, PackNavListMobile, OrderContainer } from '../constants';
 
 const PartyGoer = () => {
   return (
@@ -65,9 +63,7 @@ const PartyGoer = () => {
         </ListWrap>
         <ScrollText>Scroll for more<span style={{width: "20px", marginTop: "18px"}}><ScrollIcon src={downarrow} alt='downarrow' /></span></ScrollText>
       </OrderList>
-      <PriceContainer>
-        <Price>Order Pack for N170000</Price>
-      </PriceContainer>
+      <OrderContainer />
     </Container>
   )
   }

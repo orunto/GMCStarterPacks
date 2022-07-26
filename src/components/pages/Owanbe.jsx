@@ -6,13 +6,12 @@ import { Container,
   OrderList, 
   ListWrap, 
   Listing, 
-  ListItem,
-  PriceContainer, 
-  Price } from '../styles/Components.styles';
+  ListItem
+   } from '../styles/Components.styles';
   
 import owanbe from '../../assets/owanbe.png';
 
-import { PackNavList, PackNavListMobile } from '../constants';
+import { PackNavList, PackNavListMobile,OrderContainer } from '../constants';
 
 const Owanbe = () => {
   return (
@@ -49,9 +48,7 @@ const Owanbe = () => {
           <ListItem>Palms</ListItem>
         </ListWrap>
       </OrderList>
-      <PriceContainer>
-        <Price>Order Pack for N170000</Price>
-      </PriceContainer>
+      <OrderContainer />
     </Container>
   )
   }

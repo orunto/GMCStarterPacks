@@ -10,13 +10,14 @@ import { Container,
   ListItem,
   ScrollText,
   ScrollIcon, 
-  PriceContainer, 
-  Price } from '../styles/Components.styles';
+  // PriceContainer, 
+  // Price 
+} from '../styles/Components.styles';
   
 import student from '../../assets/student.png';
 import downarrow from '../../assets/downarrow.png';
 
-import { PackNavList, PackNavListMobile } from '../constants';
+import { PackNavList, PackNavListMobile, OrderContainer } from '../constants';
 
 
 const Student = () => {
@@ -68,9 +69,7 @@ TARTER PACK</Title>
             <ScrollText style={{width: "15%"}}>Scroll for more<span style={{width: "0%"}}>
                 <ScrollIcon src={downarrow} alt='downarrow' style={{marginTop: "26px"}}/></span></ScrollText>
       </OrderList>
-      <PriceContainer>
-        <Price>Order Pack for N170000</Price>
-      </PriceContainer>
+      <OrderContainer/>
     </Container>
   )
   }

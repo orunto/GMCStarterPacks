@@ -15,10 +15,8 @@ import { Container,
   
 // import techbro from '../../assets/techbro.png';
 import downarrow from '../../assets/downarrow.png';
-// import { Icon } from '../components/icons/icons';
 
-import { PackNavList, PackNavListMobile } from '../constants';
-import  {OrderContainer} from '../constants';
+import { PackNavList, PackNavListMobile, OrderContainer} from '../constants';
 
 import '../css/Carousel.css';
 

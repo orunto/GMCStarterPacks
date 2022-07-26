@@ -9,14 +9,13 @@ import { Container,
   ListItem,
   // ScrollText,
   // ScrollIcon, 
-  PriceContainer, 
-  Price } from '../styles/Components.styles';
+} from '../styles/Components.styles';
   
 import datenight from '../../assets/datenight.png';
 // import downarrow from '../../assets/downarrow.png';
 // import { Icon } from '../components/icons/icons';
 
-import {  PackNavList, PackNavListMobile } from '../constants';
+import {  PackNavList, PackNavListMobile, OrderContainer } from '../constants';
 
 const DateNightSpecial = () => {
   return (
@@ -56,9 +55,7 @@ SPECIAL</Title>
         </ListWrap>
         {/* <ScrollText>Scroll for more<span style={{width: "20px", marginTop: "18px"}}><ScrollIcon src={downarrow} alt='downarrow' /></span></ScrollText> */}
       </OrderList>
-      <PriceContainer>
-        <Price>Order Pack for N170000</Price>
-      </PriceContainer>
+      <OrderContainer />
     </Container>
   )
   }

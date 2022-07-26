@@ -152,10 +152,10 @@ export const PriceContainer = styled.div`
 background: #E28F1D;
 width: 289px;
 height: 58px;
-// position: absolute;
 margin-top: 56px;
 margin-left: 141px;
 border-radius: 35px;
+cursor: pointer;
 ${device.small} {
   position: absolute;
   margin-top: 180px;

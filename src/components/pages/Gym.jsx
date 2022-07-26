@@ -6,15 +6,11 @@ import { Container,
   OrderList, 
   ListWrap, 
   Listing, 
-  ListItem,
-  PriceContainer, 
-  Price } from '../styles/Components.styles';
+  ListItem} from '../styles/Components.styles';
   
 import gym from '../../assets/gym.png';
-// import downarrow from '../../assets/downarrow.png';
-// import { Icon } from '../components/icons/icons';
 
-import { PackNavList, PackNavListMobile} from '../constants';
+import { PackNavList, PackNavListMobile, OrderContainer} from '../constants';
 
 const Gym = () => {
   return (
@@ -47,9 +43,7 @@ const Gym = () => {
           <ListItem>Trainers</ListItem>
         </ListWrap>
       </OrderList>
-      <PriceContainer>
-        <Price>Order Pack for N170000</Price>
-      </PriceContainer>
+      <OrderContainer />
     </Container>
   )
   }

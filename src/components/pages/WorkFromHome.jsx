@@ -9,15 +9,15 @@ import { Container,
     Listing,
     ListItem,
     ScrollText,
-    ScrollIcon,
-    PriceContainer,
-    Price
+    ScrollIcon
 } from "../styles/Components.styles";
 
 import workfromhome from '../../assets/workfromhome .png';
 import downarrow from '../../assets/downarrow.png';
 
-import {  PackNavList, PackNavListMobile } from '../constants';
+import {  PackNavList, 
+    PackNavListMobile,
+    OrderContainer } from '../constants';
 
 const WorkFromHome = () => {
     return (
@@ -64,39 +64,10 @@ const WorkFromHome = () => {
             <ScrollText style={{width: "15%"}}>Scroll for more<span style={{width: "0%"}}>
                 <ScrollIcon src={downarrow} alt='downarrow' style={{marginTop: "26px"}}/></span></ScrollText>
         </OrderList>
-        <PriceContainer>
-            <Price>Order Pack for N170000</Price>
-        </PriceContainer>
+        <OrderContainer />
     </Container>
     
     )
 }
 
 export default WorkFromHome;
-
-// import React from 'react';
-// import './App.css';
-// import { Routes, Route } from 'react-router-dom';
-
-// import Home from "./components/Home";
-// import Navbar from "./components/Navbar";
-// import TechBro from './components/TechBro';
-// import WorkFromHome from './components/WorkFromHome';
-
-// const App = () => {
-//   return (
-//    <div>
-//     <Navbar />
-//     <Routes>
-//       <Route path='/' element={<Home/>} />
-//       <Route exact path='/techbro' component={<TechBro/>} />
-//       <Route exact path='/workfromhome' component={<WorkFromHome/>}/>
-
-
-//     </Routes>
-
-//    </div>
-//   )
-// };
-
-// export default App;
