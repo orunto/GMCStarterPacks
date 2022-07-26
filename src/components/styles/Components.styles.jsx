@@ -159,9 +159,9 @@ cursor: pointer;
 ${device.small} {
   position: absolute;
   margin-top: 180px;
-  
-// }margin-left: 60px;
-//   margin-right: 78px;
+  margin-left: 10%;
+  // margin-right: 78px;
+}
 `;
 
 export const Price = styled.div`
