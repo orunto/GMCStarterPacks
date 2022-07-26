@@ -36,7 +36,7 @@ font-size: 100px;
 margin: 0 0 0 100px;
 width: 652px;
 height: 240px;
-z-index: 4;
+z-index: 2;
 ${device.small} {
   // display: none;
   font-family: 'Rische';

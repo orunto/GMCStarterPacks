@@ -19,6 +19,7 @@
     position: absolute;
     height: max-content;
     text-align: center;
+    width: -webkit-fill-available;
 
     display: block;
     font-family: 'Montserrat';
