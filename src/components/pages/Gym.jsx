@@ -10,10 +10,14 @@ import { Container,
   
 import gym from '../../assets/gym.png';
 
-import { PackNavList, PackNavListMobile, OrderContainer} from '../constants';
+import { PackNavList, PackNavListMobile, OrderContainer, Navbar, NavbarMobile, Carousel, Footer} from '../constants';
+import { TechBroItems } from '../constants/TechBroItems';
 
 const Gym = () => {
   return (
+    <div>
+    <Navbar />
+    <NavbarMobile />
     <Container>
       <PackNavList type={"gym"}/>
       <PackNavListMobile type={"gym"} />
@@ -45,6 +49,9 @@ const Gym = () => {
       </OrderList>
       <OrderContainer />
     </Container>
+    <Carousel slides={TechBroItems} />
+    <Footer />
+    </div>
   )
   }
 

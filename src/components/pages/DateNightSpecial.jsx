@@ -15,10 +15,14 @@ import datenight from '../../assets/datenight.png';
 // import downarrow from '../../assets/downarrow.png';
 // import { Icon } from '../components/icons/icons';
 
-import {  PackNavList, PackNavListMobile, OrderContainer } from '../constants';
+import {  PackNavList, PackNavListMobile, OrderContainer, Carousel, Footer, Navbar, NavbarMobile } from '../constants';
+import { TechBroItems } from '../constants/TechBroItems';
 
 const DateNightSpecial = () => {
   return (
+    <div>
+      <Navbar />
+      <NavbarMobile />
     <Container>
       <PackNavList type={"datenightspecial"}/>
       <PackNavListMobile type={"datenightspecial"} />
@@ -57,6 +61,9 @@ SPECIAL</Title>
       </OrderList>
       <OrderContainer />
     </Container>
+    <Carousel slides={TechBroItems} />
+    <Footer />
+    </div>
   )
   }
 

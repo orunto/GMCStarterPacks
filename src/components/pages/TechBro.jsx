@@ -10,19 +10,22 @@ import { Container,
   ListItem,
   ScrollText,
   ScrollIcon, 
-  // PriceContainer
    } from '../styles/Components.styles';
   
-// import techbro from '../../assets/techbro.png';
 import downarrow from '../../assets/downarrow.png';
 
-import { PackNavList, PackNavListMobile, OrderContainer} from '../constants';
+import { Navbar, NavbarMobile, Carousel, PackNavList, PackNavListMobile, OrderContainer, Footer} from '../constants';
+import { TechBroItems } from '../constants/TechBroItems';
 
 import '../css/Carousel.css';
 
 const TechBro = () => {
-  return (  
-    <Container>
+  return (
+    <div>
+      <Navbar />
+      <NavbarMobile />
+      <Container>
+
       <PackNavList type={"techbro"}/>
       <PackNavListMobile type={"techbro"} />
       
@@ -66,8 +69,10 @@ const TechBro = () => {
         <ScrollText>Scroll for more<span style={{width: "20px", marginTop: "18px"}}><ScrollIcon src={downarrow} alt='downarrow' /></span></ScrollText>
       </OrderList>
       <OrderContainer />
-        
-    </Container>
+      </Container>
+      <Carousel slides={TechBroItems}/>
+      <Footer />
+    </div>
   )
   }
 

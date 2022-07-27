@@ -63,11 +63,12 @@ color: #18191F;
 width: 20px;
 height: 20px;
 `;
-export const CartIcon = styled.img`
+export const CartIconBag = styled.img`
 color: #18191F;
 width: 22.24px;
 height: 20px;
 margin-left: 30px;
+cursor: pointer;
 `;
 export const PersonIcon = styled.img`
 color: #18191F;

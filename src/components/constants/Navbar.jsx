@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-
+import { Link } from "react-router-dom";
 import {Container, 
     Wrapper, 
     LogoContainer, 
@@ -11,7 +11,7 @@ import {Container,
     Arrow, 
     IconsContainer, 
     SearchIcon, 
-    CartIcon, 
+    CartIconBag, 
     PersonIcon, 
     NavbarText, 
     NavText, 
@@ -55,7 +55,7 @@ export const Navbar = () => {
                 </Center>
                 <IconsContainer>
                     <SearchIcon src={search1} alt='search' style={{color: 'red'}}/>
-                    <CartIcon src={cart1} alt='cart' />
+                    <Link to='/Cart'> <CartIconBag src={cart1} alt='cart' /></Link>
                     <PersonIcon src={person1} alt='person' />
                 </IconsContainer>
             </Wrapper>

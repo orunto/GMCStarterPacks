@@ -17,11 +17,20 @@ import { Container,
 import student from '../../assets/student.png';
 import downarrow from '../../assets/downarrow.png';
 
-import { PackNavList, PackNavListMobile, OrderContainer } from '../constants';
+import { Footer,
+  Carousel, 
+  Navbar, 
+  NavbarMobile, 
+  PackNavList, 
+  PackNavListMobile, 
+  OrderContainer } from '../constants';
 
-
+import { TechBroItems } from '../constants/TechBroItems';
 const Student = () => {
   return (
+    <div>
+      <Navbar />
+      <NavbarMobile />
     <Container>
       <PackNavList type={"student"}/>
       <PackNavListMobile type={"student"} />
@@ -31,7 +40,7 @@ const Student = () => {
           }
         }}src={student} alt='image'/>
         <Title>STUDENT 
-TARTER PACK</Title>
+STARTER</Title>
       </Wrapper>
       <OrderList>
         <ListWrap>
@@ -71,6 +80,9 @@ TARTER PACK</Title>
       </OrderList>
       <OrderContainer/>
     </Container>
+    <Carousel slides={TechBroItems}/>
+    <Footer />
+    </div>
   )
   }
 

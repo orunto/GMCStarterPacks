@@ -9,7 +9,7 @@ const PackNavList = ({type}) => {
           <PackItem id={type=== "techbro"? "current" : "techbro"} href="/">Tech Bro</PackItem>
           <PackItem id={type=== "workfromhome" ? "current" : "workfromhome"} href="/workfromhome">Work from home</PackItem>
           <PackItem id={type=== "gym"? "current" : "gym"} href="/gym">Gym</PackItem>
-          <PackItem id={type=== "owanbe"? "current" : "owanbe"} href="/owanbe">Owanbe</PackItem>
+          <PackItem id={type=== "owanbe"? "current" : "owanbe"} href="/owanbe">Owambe</PackItem>
           <PackItem id={type=== "student"? "current" : "student"} href="/student">Student</PackItem>
           <PackItem id={type=== "corporate"? "current" : "corporate"} href="/corporatecasual">Corporate</PackItem>
           <PackItem id={type=== "partygoer"? "current" : "partygoer"} href="/partygoer">Party</PackItem>

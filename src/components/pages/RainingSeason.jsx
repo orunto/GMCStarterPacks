@@ -15,10 +15,14 @@ import { Container,
 import raining from '../../assets/raining.png';
 import downarrow from '../../assets/downarrow.png';
 
-import { PackNavList, PackNavListMobile , OrderContainer} from '../constants';
+import { PackNavList, PackNavListMobile , OrderContainer, Navbar, NavbarMobile, Carousel, Footer} from '../constants';
+import { TechBroItems } from '../constants/TechBroItems';
 
 const RainingSeason = () => {
   return (
+    <div>
+      <Navbar />
+      <NavbarMobile />
     <Container>
       <PackNavList type={"rainingseason"}/>
       <PackNavListMobile type={"rainingseason"} />
@@ -68,6 +72,9 @@ shirts</ListItem>
       </OrderList>
       <OrderContainer />
     </Container>
+    <Carousel slides={TechBroItems} />
+    <Footer />
+    </div>
   )
   }
 

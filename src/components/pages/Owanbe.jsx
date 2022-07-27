@@ -11,10 +11,14 @@ import { Container,
   
 import owanbe from '../../assets/owanbe.png';
 
-import { PackNavList, PackNavListMobile,OrderContainer } from '../constants';
+import { PackNavList, PackNavListMobile,OrderContainer, Navbar, NavbarMobile, Carousel, Footer } from '../constants';
+import { TechBroItems } from '../constants/TechBroItems';
 
 const Owanbe = () => {
   return (
+    <div>
+      <Navbar />
+      <NavbarMobile />
     <Container>
       <PackNavList type={"owanbe"}/>
       <PackNavListMobile type={"owanbe"} />
@@ -50,6 +54,9 @@ const Owanbe = () => {
       </OrderList>
       <OrderContainer />
     </Container>
+    <Carousel slides={TechBroItems} />
+    <Footer />
+    </div>
   )
   }
 

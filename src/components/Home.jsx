@@ -3,22 +3,19 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Thanks to the index.js file I wrote earlier you can call all the components in a single line
-import { Navbar, NavbarMobile, Footer, Carousel} from './constants'; 
-import { CorporateCasual, DateNightSpecial, Gym, Owanbe, PartyGoer, RainingSeason, Student, TechBro, WorkFromHome } from './pages'; 
+// import { Navbar, NavbarMobile, Footer, Carousel} from './constants'; 
+import { CartPage, CorporateCasual, DateNightSpecial, Gym, Owanbe, PartyGoer, RainingSeason, Student, TechBro, WorkFromHome } from './pages'; 
 
-import { TechBroItems } from './constants/TechBroItems';
+// import { TechBroItems } from './constants/TechBroItems';
 
 import './css/Carousel.css';
 import './css/PackNav.css';
-// import Gym from "./Gym";
-// import TechBro from "./TechBro";
-// import WorkFromHome from "./WorkFromHome";
 
 const Home = () => {
     return (
         <Router>
-            <Navbar />
-            <NavbarMobile /> 
+            {/* <Navbar /> */}
+            {/* <NavbarMobile />  */}
             <Routes>
                 <Route path='/' element={<TechBro/>}/>
                 <Route path='/owanbe' element={<Owanbe />}/>
@@ -29,17 +26,13 @@ const Home = () => {
                 <Route path='/partygoer' element={<PartyGoer />}/>
                 <Route path='/rainingseason' element={<RainingSeason />}/>
                 <Route path='/student' element={<Student />}/>
+                <Route path='/cart' element={<CartPage />}/>
             </Routes>
 
-            <Carousel slides={TechBroItems}/>
-
-            {/* <TechBro /> */}
-            {/* <WorkFromHome /> */}
-            {/* <Gym /> */}
-
+            {/* <Carousel slides={TechBroItems}/> */}
             
 
-            <Footer />
+            {/* <Footer /> */}
         </Router>
     )
 }
