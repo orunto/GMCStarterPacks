@@ -339,18 +339,71 @@ ${({sxm}) => sxm && css(sxm)}
 
 
 // CartPage
+export const CartContainer = styled.div`
+display: flex;
+font-family: 'Sora', sans-serif;
+margin: 0;
+
+`;
 
 export const PackContainer = styled.div`
-background-color: #F2F2F2;
-
-height: 500px;
+background: #F2F2F2;
+width: 50%;
+padding: 0 80px 0 80px;
+margin: 0;
 `;
 export const PackWrapper = styled.div`
-padding: 30px 0 0 30px;
-font-family: 'Sora', sans-serif;
+padding: 120px 0 50px 0px;
 font-size: 24px;
 font-weight: 600;
 line-height: 30px;
 letter-spacing: 0em;
+color: #000000;
 text-align: left;
+`;
+
+export const CartItemsWrapper = styled.div`
+background: #FFFFFF;
+border: 1px solid #000000;
+width: 560px;
+height: 150px;
+border-radius: 5px;
+margin-bottom: 30px;
+`;
+export const CustomPacks = styled.div`
+background: #FFFFFF;
+padding-left: 80px;
+
+.custom {
+  padding-bottom: 15px;
+}
+`;
+export const CustomTitle = styled.div`
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+`;
+export const CustomImage = styled.img`
+padding: 50px 80px 30px 0;
+`;
+export const CustomButton = styled.button`
+background: #E28F1D;
+width: 560px;
+height: 60px;
+border-radius: 30px;
+border: 1px solid #E28F1D;
+cursor: pointer;
+font-weight: 400;
+font-size: 16px;
+color: #FFFFFF;
+margin: 0 0 92px 0;
+`;
+
+//CheckoutPage
+export const CheckoutInfo = styled.div`
+margin-top: 50px;
+
+`;
+export const Address = styled.div`
+margin-bottom: 20px;
 `;

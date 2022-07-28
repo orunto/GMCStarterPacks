@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Thanks to the index.js file I wrote earlier you can call all the components in a single line
 // import { Navbar, NavbarMobile, Footer, Carousel} from './constants'; 
-import { CartPage, CorporateCasual, DateNightSpecial, Gym, Owanbe, PartyGoer, RainingSeason, Student, TechBro, WorkFromHome } from './pages'; 
+import { CartPage, CheckoutPage, CorporateCasual, DateNightSpecial, Gym, Owanbe, PartyGoer, RainingSeason, Student, TechBro, WorkFromHome } from './pages'; 
 
 // import { TechBroItems } from './constants/TechBroItems';
 
@@ -27,6 +27,7 @@ const Home = () => {
                 <Route path='/rainingseason' element={<RainingSeason />}/>
                 <Route path='/student' element={<Student />}/>
                 <Route path='/cart' element={<CartPage />}/>
+                <Route path="/checkout" element={<CheckoutPage />}/>
             </Routes>
 
             {/* <Carousel slides={TechBroItems}/> */}
