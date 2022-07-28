@@ -1,11 +1,21 @@
 import React from "react";
+import CartItems from "../CartItem";
+import { Footer } from "../constants";
 
-import "../styles/Components.styles";
+import {  
+  PackContainer,
+   PackWrapper
+  } from "../styles/Components.styles";
 
 const CartPage = () => {
   return (
-    <div>CARTPAGE</div>
-
+    <>
+      <PackContainer>
+        <PackWrapper>Your Packs</PackWrapper>
+        <CartItems/>
+      </PackContainer>
+      <Footer />
+      </>
   )
  
 };

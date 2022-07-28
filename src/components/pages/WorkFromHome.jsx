@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Container, 
-    Wrapper, 
+import {
+    Container,
+    Wrapper,
     Image,
     Title,
     OrderList,
@@ -9,65 +10,83 @@ import { Container,
     Listing,
     ListItem,
     ScrollText,
-    ScrollIcon
+    ScrollIcon,
 } from "../styles/Components.styles";
 
-import workfromhome from '../../assets/workfromhome .png';
-import downarrow from '../../assets/downarrow.png';
+import workfromhome from "../../assets/workfromhome .png";
+import downarrow from "../../assets/downarrow.png";
 
-import {  PackNavList, 
-    PackNavListMobile,
-    OrderContainer } from '../constants';
+import { PackNavList, 
+    PackNavListMobile, 
+    OrderContainer, 
+    Carousel, 
+    Footer, 
+    Navbar, 
+    NavbarMobile } from "../constants";
+import { TechBroItems } from "../constants/TechBroItems";
 
 const WorkFromHome = () => {
     return (
-    <Container>
-        <PackNavList type={"workfromhome"}/>
-        <PackNavListMobile type={"workfromhome"} />
-        <Wrapper>
-            <Image src={workfromhome} alt='image' />
-            <Title>WORK FROM HOME</Title>
-        </Wrapper>
-        <OrderList>
-            <ListWrap>
-                <Listing style={{ marginTop: 0 }}>2</Listing>
-                <ListItem>Jean(s)</ListItem>
-            </ListWrap>
-            <ListWrap>
-                <Listing>1</Listing>
-                <ListItem>Sweater/Cardigan</ListItem>
-            </ListWrap>
-            <ListWrap>
-                <Listing>2</Listing>
-                <ListItem>Kakki pants</ListItem>
-            </ListWrap>
-            <ListWrap>
-                <Listing>2</Listing>
-                <ListItem>Joggers</ListItem>
-            </ListWrap>
-            <ListWrap>
-                <Listing>2</Listing>
-                <ListItem>Jersey</ListItem>
-            </ListWrap>
-            <ListWrap>
-                <Listing>3</Listing>
-                <ListItem>Plain tees</ListItem>
-            </ListWrap>
-            <ListWrap>
-                <Listing>1</Listing>
-                <ListItem>Crocs</ListItem>
-            </ListWrap>
-            <ListWrap>
-                <Listing>3</Listing>
-                <ListItem>Designer tees</ListItem>
-            </ListWrap>
-            <ScrollText style={{width: "15%"}}>Scroll for more<span style={{width: "0%"}}>
-                <ScrollIcon src={downarrow} alt='downarrow' style={{marginTop: "26px"}}/></span></ScrollText>
-        </OrderList>
-        <OrderContainer />
-    </Container>
-    
-    )
-}
+        <div>
+            <Navbar />
+            <NavbarMobile />
+            <Container>
+            <PackNavList type={"workfromhome"} />
+            <PackNavListMobile type={"workfromhome"} />
+            <Wrapper>
+                <Image src={workfromhome} alt="image" />
+                <Title>WORK FROM HOME</Title>
+            </Wrapper>
+            <OrderList>
+                <ListWrap>
+                    <Listing style={{ marginTop: 0 }}>2</Listing>
+                    <ListItem>Jean(s)</ListItem>
+                </ListWrap>
+                <ListWrap>
+                    <Listing>1</Listing>
+                    <ListItem>Sweater/Cardigan</ListItem>
+                </ListWrap>
+                <ListWrap>
+                    <Listing>2</Listing>
+                    <ListItem>Kakki pants</ListItem>
+                </ListWrap>
+                <ListWrap>
+                    <Listing>2</Listing>
+                    <ListItem>Joggers</ListItem>
+                </ListWrap>
+                <ListWrap>
+                    <Listing>2</Listing>
+                    <ListItem>Jersey</ListItem>
+                </ListWrap>
+                <ListWrap>
+                    <Listing>3</Listing>
+                    <ListItem>Plain tees</ListItem>
+                </ListWrap>
+                <ListWrap>
+                    <Listing>1</Listing>
+                    <ListItem>Crocs</ListItem>
+                </ListWrap>
+                <ListWrap>
+                    <Listing>3</Listing>
+                    <ListItem>Designer tees</ListItem>
+                </ListWrap>
+                <ScrollText style={{ width: "15%" }}>
+                    Scroll for more
+                    <span style={{ width: "0%" }}>
+                        <ScrollIcon
+                            src={downarrow}
+                            alt="downarrow"
+                            style={{ marginTop: "26px" }}
+                        />
+                    </span>
+                </ScrollText>
+            </OrderList>
+            <OrderContainer id={1} />
+        </Container>
+        <Carousel slides={TechBroItems} />
+        <Footer />
+        </div>
+    );
+};
 
 export default WorkFromHome;

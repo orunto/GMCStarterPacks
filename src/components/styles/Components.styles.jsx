@@ -338,4 +338,19 @@ ${({sxm}) => sxm && css(sxm)}
 `;
 
 
-// NavBar
+// CartPage
+
+export const PackContainer = styled.div`
+background-color: #F2F2F2;
+
+height: 500px;
+`;
+export const PackWrapper = styled.div`
+padding: 30px 0 0 30px;
+font-family: 'Sora', sans-serif;
+font-size: 24px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+`;
