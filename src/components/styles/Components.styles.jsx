@@ -156,6 +156,7 @@ margin-top: 56px;
 margin-left: 141px;
 border-radius: 35px;
 cursor: pointer;
+margin-bottom: 30px;
 ${device.small} {
   position: absolute;
   margin-top: 180px;
@@ -406,4 +407,52 @@ margin-top: 50px;
 `;
 export const Address = styled.div`
 margin-bottom: 20px;
+color: #000000;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+`;
+export const FormContainer = styled.div`
+}
+`;
+export const Register = styled.div`
+margin-bottom: 30px;
+border: 1px #737373;
+border-radius: 5px;
+
+`;
+export const RegisterInput = styled.input`
+width: 560px;
+height: 40px;
+padding-left: 15px;
+font-family: 'Sora', sans-serif;
+font-size: 16px;
+line-height: 20px;
+color: #B1B1B3;
+`;
+export const CardContainer = styled.div`
+display: flex;
+justify-content: space-between;
+`;
+export const CardInput = styled.input`
+width: 150px;
+height: 40px;
+padding-left: 15px;
+font-family: 'Sora', sans-serif;
+font-size: 16px;
+line-height: 20px;
+color: #B1B1B3;
+`;
+export const Discount = styled.div`
+display: flex;
+color: #000000;
+`;
+export const Save = styled.div`
+font-weight: 600;
+font-size: 16px;
+margin: 0 30px 30px 0;
+`;
+export const DiscountPrice = styled.div`
+font-weight: 400;
+font-size: 16px;
 `;

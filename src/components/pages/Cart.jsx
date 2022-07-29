@@ -35,7 +35,7 @@ const CartPage = () => {
           <CustomButton>GET YOURS</CustomButton>
         </CustomPacks>
       </CartContainer>
-      <Footer style={{ marginTop: "0px" }} />
+      <Footer />
     </div>
   );
 };

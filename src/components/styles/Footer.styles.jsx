@@ -29,7 +29,7 @@ transition: all 0.5s ease;
 export const FooterWrapper = styled.div`
 background-color: #0B0D17;
 min-height: 420px;
-margin-top: 30px;
+// margin-top: 30px;
 width: 100vw;
 height: 100%;
 ${device.small} {
