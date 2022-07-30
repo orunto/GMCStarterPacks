@@ -387,7 +387,7 @@ border-radius: 5px;
 margin-bottom: 30px;
 
 ${device.small} {
-width: 84%;
+width: 315px;
 height: 96px;
 }
 `;
@@ -511,4 +511,37 @@ margin: 0 30px 30px 0;
 export const DiscountPrice = styled.div`
 font-weight: 400;
 font-size: 16px;
+`;
+
+export const StarterPacks = styled.div`
+padding: 20px 0 15px 20px;
+font-weight: 600;
+font-size: 18px;
+`;
+
+export const CartPrice = styled.div`
+font-weight: 600;
+font-size: 14px;
+color: #000000;
+padding-left: 20px;
+`;
+
+export const RemoveContainer = styled.div`
+display: flex;
+justify-content: space-between;
+`;
+
+export const Remove = styled.div`
+display: flex;
+margin-right: 23.5px;
+`;
+export const RemoveText = styled.div`
+font-weight: 300;
+font-size: 16px;
+line-height: 15px;
+color: #E28F1D;
+`;
+export const RemoveImage = styled.img`
+// background: #E28F1D;
+margin-left: 10px;
 `;
