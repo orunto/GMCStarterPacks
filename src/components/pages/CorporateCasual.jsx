@@ -73,7 +73,7 @@ const CorporateCasual = () => {
                     </ListWrap>
                     {/* <ScrollText>Scroll for more<span style={{width: "20px", marginTop: "18px"}}><ScrollIcon src={downarrow} alt='downarrow' /></span></ScrollText> */}
                 </OrderList>
-                <OrderContainer id={1} />
+                <OrderContainer id="corporate" />
             </Container>
             <Carousel slides={TechBroItems} />
             <Footer />

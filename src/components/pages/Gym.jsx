@@ -57,7 +57,7 @@ const Gym = () => {
                         <ListItem>Trainers</ListItem>
                     </ListWrap>
                 </OrderList>
-                <OrderContainer id={1} />
+                <OrderContainer id="gym" />
             </Container>
             <Carousel slides={TechBroItems} />
             <Footer />

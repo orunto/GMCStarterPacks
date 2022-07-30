@@ -81,7 +81,7 @@ const WorkFromHome = () => {
                     </span>
                 </ScrollText>
             </OrderList>
-            <OrderContainer id={1} />
+            <OrderContainer id="workfromhome" />
         </Container>
         <Carousel slides={TechBroItems} />
         <Footer />

@@ -84,7 +84,7 @@ const PartyGoer = () => {
                         </span>
                     </ScrollText>
                 </OrderList>
-                <OrderContainer id={1} />
+                <OrderContainer id="partygoer" />
             </Container>
             <Carousel slides={TechBroItems} />
             <Footer />

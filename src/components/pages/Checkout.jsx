@@ -3,7 +3,6 @@ import CartItems from "../CartItem";
 import { Footer } from "../constants";
 import {
   CartContainer,
-  CartItemsWrapper,
   CustomPacks,
   CustomTitle,
   PackContainer,
@@ -69,15 +68,7 @@ const CheckoutPage = () => {
       <CartContainer>
         <PackContainer>
           <PackWrapper>Your Packs</PackWrapper>
-          <CartItemsWrapper>
             <CartItems />
-          </CartItemsWrapper>
-          <CartItemsWrapper>
-            <CartItems />
-          </CartItemsWrapper>
-          <CartItemsWrapper>
-            <CartItems />
-          </CartItemsWrapper>
         </PackContainer>
         <CustomPacks>
           <PackWrapper className="custom">Checkout</PackWrapper>

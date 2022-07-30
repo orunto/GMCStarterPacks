@@ -65,7 +65,7 @@ const Owanbe = () => {
                         <ListItem>Palms</ListItem>
                     </ListWrap>
                 </OrderList>
-                <OrderContainer id={1} />
+                <OrderContainer id="owanbe" />
             </Container>
             <Carousel slides={TechBroItems} />
             <Footer />

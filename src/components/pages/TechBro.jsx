@@ -81,7 +81,7 @@ const TechBro = () => {
                         </span>
                     </ScrollText>
                 </OrderList>
-                <OrderContainer id={8} />
+                <OrderContainer id="techbro" />
             </Container>
             <Carousel slides={TechBroItems} />
             <Footer />

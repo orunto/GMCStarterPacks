@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import {
   PackContainer,
   PackWrapper,
-  CartItemsWrapper,
   CustomPacks,
   CartContainer,
   CustomTitle,
@@ -20,13 +19,7 @@ const CartPage = () => {
       <CartContainer>
         <PackContainer>
           <PackWrapper>Your Packs</PackWrapper>
-          <CartItemsWrapper>
-            <CartItems />
-          </CartItemsWrapper>
-          <CartItemsWrapper>
-            <CartItems />
-          </CartItemsWrapper>
-          
+          <CartItems />
           <Link to='/Checkout'><CustomButton>CHECKOUT</CustomButton></Link>
         </PackContainer>
         <CustomPacks>

@@ -87,7 +87,7 @@ const RainingSeason = () => {
                         </span>
                     </ScrollText>
                 </OrderList>
-                <OrderContainer id={1} />
+                <OrderContainer id="raining" />
             </Container>
             <Carousel slides={TechBroItems} />
             <Footer />

@@ -91,7 +91,7 @@ const Student = () => {
                         </span>
                     </ScrollText>
                 </OrderList>
-                <OrderContainer id={1} />
+                <OrderContainer id="student" />
             </Container>
             <Carousel slides={TechBroItems} />
             <Footer />

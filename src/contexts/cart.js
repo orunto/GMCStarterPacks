@@ -17,8 +17,19 @@ export const CartProvider = ({ children }) => {
         });
     };
 
+    const removeFromCart = (item) => {
+        setItems((items) => {
+            if (items) {
+                return items.splice(items.indexOf(item));
+            }
+            return items;
+        });
+    };
+
     return (
-        <CartItemsContext.Provider value={{ items, setItems, addToCart }}>
+        <CartItemsContext.Provider
+            value={{ items, setItems, addToCart, removeFromCart }}
+        >
             {children}
         </CartItemsContext.Provider>
     );
