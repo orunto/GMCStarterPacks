@@ -26,6 +26,7 @@ const CartPage = () => {
           <CartItemsWrapper>
             <CartItems />
           </CartItemsWrapper>
+          
           <Link to='/Checkout'><CustomButton>CHECKOUT</CustomButton></Link>
         </PackContainer>
         <CustomPacks>

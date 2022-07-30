@@ -345,6 +345,9 @@ display: flex;
 font-family: 'Sora', sans-serif;
 margin: 0;
 
+${device.small} {
+  display: block;
+}
 `;
 
 export const PackContainer = styled.div`
@@ -352,15 +355,27 @@ background: #F2F2F2;
 width: 50%;
 padding: 0 80px 0 80px;
 margin: 0;
+
+${device.small} {
+  width: 100%;
+  padding: 0 30px 0 30px;
+  height: 250px;
+  overflow: auto;
+}
+
 `;
 export const PackWrapper = styled.div`
-padding: 120px 0 50px 0px;
+padding: 120px 0 50px 0px;<CartIte
 font-size: 24px;
 font-weight: 600;
 line-height: 30px;
 letter-spacing: 0em;
 color: #000000;
 text-align: left;
+
+${device.small} {
+  padding: 30px 0 30px 0px;
+}
 `;
 
 export const CartItemsWrapper = styled.div`
@@ -370,6 +385,11 @@ width: 560px;
 height: 150px;
 border-radius: 5px;
 margin-bottom: 30px;
+
+${device.small} {
+width: 84%;
+height: 96px;
+}
 `;
 export const CustomPacks = styled.div`
 background: #FFFFFF;
@@ -378,14 +398,28 @@ padding-left: 80px;
 .custom {
   padding-bottom: 15px;
 }
+
+${device.small} {
+  width: 100%;
+  padding-left: 31px;
+}
 `;
 export const CustomTitle = styled.div`
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
+
+${device.small} {
+  height: 36px;
+}
 `;
 export const CustomImage = styled.img`
 padding: 50px 80px 30px 0;
+
+${device.small} {
+  width: 315px;
+height: 365.62px;
+}
 `;
 export const CustomButton = styled.button`
 background: #E28F1D;
@@ -398,6 +432,11 @@ font-weight: 400;
 font-size: 16px;
 color: #FFFFFF;
 margin: 0 0 92px 0;
+
+${device.small} {
+  width: 83.73%;
+height: 58px;
+}
 `;
 
 //CheckoutPage
@@ -415,11 +454,16 @@ line-height: 20px;
 export const FormContainer = styled.div`
 }
 `;
-export const Register = styled.div`
+export const Register = styled.form`
 margin-bottom: 30px;
 border: 1px #737373;
 border-radius: 5px;
 
+span {
+  font-size: 14px;
+  color: red;
+  margin-bottom: 15px;
+}
 `;
 export const RegisterInput = styled.input`
 width: 560px;
@@ -429,10 +473,18 @@ font-family: 'Sora', sans-serif;
 font-size: 16px;
 line-height: 20px;
 color: #B1B1B3;
+
+${device.small} {
+  width: 315px;
+}
 `;
 export const CardContainer = styled.div`
 display: flex;
 justify-content: space-between;
+
+${device.small} {
+  margin-right: 21px;
+}
 `;
 export const CardInput = styled.input`
 width: 150px;
@@ -442,6 +494,10 @@ font-family: 'Sora', sans-serif;
 font-size: 16px;
 line-height: 20px;
 color: #B1B1B3;
+
+${device.small} {
+  width: 90px;
+}
 `;
 export const Discount = styled.div`
 display: flex;

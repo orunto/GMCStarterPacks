@@ -30,6 +30,7 @@ import person1 from "../../assets/person1.svg";
 import menu from "../../assets/menu.svg";
 import arrowUp from "../../assets/arrowUp.svg";
 import cancel from "../../assets/cancel.png";
+import { Link } from "react-router-dom";
 
 class NavbarMobile extends Component {
   state = {
@@ -65,7 +66,7 @@ class NavbarMobile extends Component {
             </LogoContainer>
             <IconsContainer>
               <SearchIcon src={search1} alt="search" />
-              <CartIcon src={cart1} alt="cart" />
+              <Link to='/Checkout'><CartIcon src={cart1} alt="cart" /></Link>
               <PersonIcon src={person1} alt="person" />
               <MenuIcon onClick={this.handleClick}>
                 {this.state.clicked ? (

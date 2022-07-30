@@ -33,6 +33,8 @@ const CheckoutPage = () => {
     promoCode: "",
   });
 
+  const [submitted, setSubmitted] = useState(false);
+
   const handleEmailInputChange = (event) => {
     setValues({ ...values, email: event.target.value });
   };
@@ -57,12 +59,19 @@ const CheckoutPage = () => {
   const handlePromoCodeInputChange = (event) => {
     setValues({...values, promoCode: event.target.value});
   };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSubmitted(true);
+  }
 
   return (
     <div>
       <CartContainer>
         <PackContainer>
           <PackWrapper>Your Packs</PackWrapper>
+          <CartItemsWrapper>
+            <CartItems />
+          </CartItemsWrapper>
           <CartItemsWrapper>
             <CartItems />
           </CartItemsWrapper>
@@ -77,7 +86,7 @@ const CheckoutPage = () => {
           </CustomTitle>
           <CheckoutInfo>
             <Address>Email Address</Address>
-            <Register>
+            <Register >
               <RegisterInput
                 onChange={handleEmailInputChange}
                 value={values.emailAddress}
@@ -85,6 +94,7 @@ const CheckoutPage = () => {
                 placeholder="johndoe@example.com"
                 name="emailAddress"
               />
+              {submitted && !values.email ? <span>Please enter a Valid Email Address</span> : null}
             </Register>
             <Address>Phone Number</Address>
             <Register>
@@ -95,6 +105,7 @@ const CheckoutPage = () => {
                 placeholder="+234 - 000 - 000 - 0000"
                 name="phoneNumber"
               />
+              {submitted && !values.phoneNumber ? <span>Phone Number required!</span> : null}
             </Register>
             <Address>Billing Address</Address>
             <Register>
@@ -105,6 +116,7 @@ const CheckoutPage = () => {
                 placeholder="No 1, Example Street, Test Town"
                 name="billingAddress"
               />
+              {submitted && !values.billingAddress ? <span>Billing Address is required!</span> : null}
             </Register>
             <Address>Card Number</Address>
             <Register>
@@ -115,6 +127,7 @@ const CheckoutPage = () => {
                 placeholder="0000 - 0000 - 0000 - 0000"
                 name="cardNumber"
               />
+              {submitted && !values.cardNumber ? <span>Input your Card Number!</span> : null}
             </Register>
             <CardContainer>
                 <FormContainer>
@@ -127,6 +140,7 @@ const CheckoutPage = () => {
                   placeholder="MM / YY"
                   name="expiryDate"
                 />
+                {submitted && !values.expiryDate ? <span>This field is required!</span> : null}
               </Register>
               </FormContainer>
               <FormContainer>
@@ -139,6 +153,7 @@ const CheckoutPage = () => {
                   placeholder="000"
                   name="cvv"
                 />
+                {submitted && !values.cvv ? <span>This field is required!</span> : null}
               </Register>
               </FormContainer>
               <FormContainer>
@@ -151,6 +166,7 @@ const CheckoutPage = () => {
                   placeholder="0000"
                   name="zipCode"
                 />
+                {submitted && !values.zipCode ? <span>This field is required!</span> : null}
               </Register>
               </FormContainer>
             </CardContainer>
@@ -169,7 +185,7 @@ const CheckoutPage = () => {
                 <DiscountPrice>- ₦0.00</DiscountPrice>
             </Discount>
           </CheckoutInfo>
-          <CustomButton>Pay ₦510,000</CustomButton>
+          <CustomButton onSubmit={handleSubmit} >Pay ₦510,000</CustomButton>
         </CustomPacks>
       </CartContainer>
       <Footer/>

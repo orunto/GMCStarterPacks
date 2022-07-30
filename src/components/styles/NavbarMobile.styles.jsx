@@ -150,7 +150,7 @@ export const SearchIcon = styled.img`
   height: 20px;
 `;
 export const CartIcon = styled.img`
-  color: ##0b0d17;
+  color: #0b0d17;
   width: 20px;
   height: 20px;
   margin-left: 30px;
