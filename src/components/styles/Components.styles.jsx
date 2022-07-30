@@ -401,7 +401,7 @@ padding-left: 80px;
 
 ${device.small} {
   width: 100%;
-  padding-left: 31px;
+  padding-left: 56px;
 }
 `;
 export const CustomTitle = styled.div`
