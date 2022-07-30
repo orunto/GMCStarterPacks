@@ -12,7 +12,9 @@ export const useStore = (key, value) => {
         setState(value);
         if (value !== undefined && typeof value !== "function")
             localStorage.setItem(key, JSON.stringify(value));
-        else localStorage.setItem(key, JSON.stringify(value(state)));
+        else if (value) {
+            localStorage.setItem(key, JSON.stringify(value(state)));
+        }
     };
 
     return [state, updateState];

@@ -148,7 +148,7 @@ ${device.small} {
 }
 `;
 
-export const PriceContainer = styled.div`
+export const PriceContainer = styled.button`
 background: #E28F1D;
 width: 289px;
 height: 58px;
@@ -157,6 +157,7 @@ margin-left: 141px;
 border-radius: 35px;
 cursor: pointer;
 margin-bottom: 30px;
+border: 1px solid #E28F1D;
 ${device.small} {
   position: absolute;
   margin-top: 180px;

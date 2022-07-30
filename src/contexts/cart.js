@@ -17,12 +17,9 @@ export const CartProvider = ({ children }) => {
         });
     };
 
-    const removeFromCart = (item) => {
+    const removeFromCart = (itemKey) => {
         setItems((items) => {
-            if (items) {
-                return items.splice(items.indexOf(item));
-            }
-            return items;
+            return items.filter((item) => item.id !== itemKey);
         });
     };
 
