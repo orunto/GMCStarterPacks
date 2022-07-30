@@ -66,7 +66,7 @@ class NavbarMobile extends Component {
             </LogoContainer>
             <IconsContainer>
               <SearchIcon src={search1} alt="search" />
-              <Link to='/Checkout'><CartIcon src={cart1} alt="cart" /></Link>
+              <Link to='/Cart'><CartIcon src={cart1} alt="cart" /></Link>
               <PersonIcon src={person1} alt="person" />
               <MenuIcon onClick={this.handleClick}>
                 {this.state.clicked ? (
