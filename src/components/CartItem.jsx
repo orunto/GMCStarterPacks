@@ -105,7 +105,7 @@ const CartItems = () => {
                 ))
             ) : (
                 <>
-                    <p>You have no Items in cart</p>
+                    <p>Oops! You have no Item in Cart</p>
                 </>
             )}
         </div>
